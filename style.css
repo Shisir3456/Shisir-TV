@@ -1,0 +1,42 @@
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://placehold.co/1920x1080') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-outline-danger {
+    color: #e50914;
+    border-color: #e50914;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+.text-light {
+    color: #ffffff !important;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shisir TV - Your Streaming Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Shisir TV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Become Uploader</a>
+                </li>
+            </ul>
+            <form class="d-flex me-3">
+                <input class="form-control" type="search" placeholder="Search videos...">
+            </form>
+            <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#registerModal">Sign Up</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4">Welcome to Shisir TV</h1>
+        <p class="lead">Unlimited movies, TV shows, and more.</p>
+        <button class="btn btn-danger btn-lg">Start Watching</button>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Categories</h2>
+        <div class="d-flex flex-wrap">
+            <div class="p-2"><button class="btn btn-outline-danger">Action</button></div>
+            <div class="p-2"><button class="btn btn-outline-danger">Comedy</button></div>
+            <div class="p-2"><button class="btn btn-outline-danger">Drama</button></div>
+            <div class="p-2"><button class="btn btn-outline-danger">Horror</button></div>
+            <div class="p-2"><button class="btn btn-outline-danger">Documentary</button></div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Gallery -->
+<section class="py-5 bg-dark text-light">
+    <div class="container">
+        <h2 class="mb-4">Trending Now</h2>
+        <div class="row">
+            <!-- Video Card -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-secondary text-light">
+                    <img src="https://placehold.co/300x169" class="card-img-top" alt="Video Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Title</h5>
+                        <p class="card-text">Brief description of the video.</p>
+                        <button class="btn btn-danger">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more video cards as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-light text-center">
+    <p>&copy; 2024 Shisir TV. All rights reserved.</p>
+</footer>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title">Sign Up</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
